@@ -6,9 +6,9 @@ npmのインストールを行う
 `$ npm i`
 
 `$ npx gulp`  
-src>css>style.cssで変更、保存を行った場合
-dest>css>style.cssにコンパイルされたファイルが置かれる。  
-処理内容
+src>css>style.cssファイルをコンパイルしたものが  
+dest>css>style.cssに置かれる。  
+処理内容  
 1、Stylelintによるコードエラーチェック  
 2、CSSMQPackerにより、メディアクエリをコードの最後にまとめる  
 3、Autoprefixerでベンダープレフィックスの付与  
@@ -26,3 +26,5 @@ src>css直下に作ること
 htmlのcssファイルリンク先は
 dest>css直下のファイルとすること
 
+watchモードにしたい場合  
+gulpfile.jsの文字表記ではないコメントをはずす。
