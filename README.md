@@ -1,8 +1,8 @@
 # gulp-css-config
 # 概要
-Gulpを使って、CSSのみの開発を効率化する
-#使い方
-npmのインストールを行う
+Gulpを使って、CSSのみの開発を効率化する  
+#使い方  
+npmのインストールを行う  
 $ npm i
 
 $ npx gulp
