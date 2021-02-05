@@ -13,9 +13,6 @@ dest>css>style.cssにコンパイルされたファイルが置かれる。
 2、CSSMQPackerにより、メディアクエリをコードの最後にまとめる
 3、Autoprefixerでベンダープレフィックスの付与
 
-ctrl + C を押し、
-Yとすることで、このモードは終了。
-
 $ npx gulp --production
 dest>css>style.cssのファイルを圧縮する
 
