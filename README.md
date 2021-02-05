@@ -5,7 +5,7 @@ Gulpを使って、CSSのみの開発を効率化する
 npmのインストールを行う  
 `$ npm i`
 
-`$ npx gulp`
+`$ npx gulp`  
 src>css>style.cssで変更、保存を行った場合
 dest>css>style.cssにコンパイルされたファイルが置かれる。  
 処理内容
@@ -13,7 +13,7 @@ dest>css>style.cssにコンパイルされたファイルが置かれる。
 2、CSSMQPackerにより、メディアクエリをコードの最後にまとめる  
 3、Autoprefixerでベンダープレフィックスの付与  
 
-`$ npx gulp --production`
+`$ npx gulp --production`  
 dest>css>style.cssのファイルを圧縮する  
 
 #環境
