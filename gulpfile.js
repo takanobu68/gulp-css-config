@@ -14,19 +14,20 @@ const mode = require("gulp-mode")({
 const stylesSrc = "src/**/*.css";
 
 gulp.task("default", function () {
-  return gulp.watch(stylesSrc, function () {
-    return gulp
-      .src(stylesSrc)
-      .pipe(postcss([stylelint(), reporter({ clearReportedMessages: true })]))
-      .pipe(postcss([mqpacker({ sort: true })]))
-      .pipe(
-        postcss([
-          autoprefixer({
-            cascade: false,
-          }),
-        ])
-      )
-      .pipe(mode.production(cleanCSS()))
-      .pipe(gulp.dest("./dest"));
-  });
+  // watchモードにしたい場合、下のコメントを解除する。
+  // return gulp.watch(stylesSrc, function () {
+  return gulp
+    .src(stylesSrc)
+    .pipe(postcss([stylelint(), reporter({ clearReportedMessages: true })]))
+    .pipe(postcss([mqpacker({ sort: true })]))
+    .pipe(
+      postcss([
+        autoprefixer({
+          cascade: false,
+        }),
+      ])
+    )
+    .pipe(mode.production(cleanCSS()))
+    .pipe(gulp.dest("./dest"));
 });
+// });
